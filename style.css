@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: cornflowerblue;
+    gap: 0.1rem;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "article article article"
+    "section section section"
+    "footer footer footer";
+}
+header{ 
+    width: 100%;
+    height: 140px;
+    grid-area: header; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-inline: 7rem;
+    padding-block: 1rem 0rem; 
+    box-shadow: 0px 1px 10px 0px black;
+    gap: 1.5rem;
+}
+aside{ 
+    grid-area: aside; 
+    background-color: gray; 
+}
+main{ 
+    grid-area: main; 
+    background-color: aliceblue;
+}
+
+}
+footer{ grid-area: footer; background-color: darkblue; }
+.topheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    color: grey;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.textheader{
+    color: grey;
+}
+.headerinput{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: 2;
+}
+.input{
+    border-radius: 7px;
+    border-color: rgb(187, 180, 180);
+    border-style:groove;
+    border-width: 1px;
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
+}
+.imggral{
+    background-color: aqua;
+}
+aside{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 7rem;
+    margin-inline: 7rem 0rem;
+}
+.desplegable{
+    display: none;
+}
+article{
+    grid-area: article; 
+    background-color:white;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2,3fr);
+    width: 100%;
+    height: 800px;
+    gap: 1rem;
+    padding-inline: 7rem;
+    padding-block: 2rem;
+}
+.placesbox{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgb(37, 37, 37)
+}
+.imgbox{
+    width: 100%;
+    height: 40%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.placesboxlist{
+    flex-direction: column;
+    padding-block: 0.75rem 0rem;
+}
+.placesboxlisttext{
+    flex-direction: column;
+    padding-inline: 1rem;
+    gap: 1rem;   
+}
+h3{ 
+    font-size: 1.5rem;
+}
+p{
+    color: grey;
+    padding-block: 0.5rem;
+}
+.placesboxlistbutton{
+    display: flex;
+    padding-block: 1rem 0rem;
+    justify-content:center;
+    padding-inline: 8rem 1rem;
+}
+.placesboxbuttona{
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 7px;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+    color: rgb(54, 53, 53);
+}
+section{
+    grid-area: section; 
+    background-color: #3374db;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    padding-inline:6rem ;
+    padding-block: 2rem ;
+}
+.sectionleft{
+    width: 50%;
+    height: auto;
+}
+.sectionright{
+    width: 50%;
+    height: auto;
+    align-items: center;
+}
+#sectionimg{
+    align-items: center;
+}
+section p{
+    color: white;
+    font-size: 20px;
+    padding-block: 1.5rem;
+}
+section h4{
+    color: white;
+    font-size:50px;
+    padding-block: 0rem 2rem;
+}
