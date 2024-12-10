@@ -99,6 +99,7 @@ article{
     padding-block: 2rem;
 }
 .placesbox{
+    height: auto;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -133,15 +134,17 @@ p{
     gap: 1rem;
 }
 .placesboxdivbutton{
-    display: flex;
-    align-items:center;
-    justify-content:right;
-    padding-inline: 1rem;
+   
    
    
 
 }
 .placesboxbuttona{
+    width: 150px;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    padding-inline: 2rem;
     background-color: white;
     border: 0.5px solid black;
     border-radius: 7px;
