@@ -30,6 +30,54 @@ header{
     box-shadow: 0px 1px 10px 0px black;
     gap: 1.5rem;
 }
+.topheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.textheader{
+    color: grey;
+}
+.textheadera{
+    color: grey;
+}
+.burguer{
+    display: none;
+    padding: 1rem;
+ }
+.headerinput{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: 2;
+    position: relative;
+    padding-block: 0.5rem;
+}
+.input{
+    border-radius: 7px;
+    border-color: rgb(187, 180, 180);
+    border-style:groove;
+    border-width: 1px;
+    width: 350px;
+    height: 50px;
+    font-size: 17px;
+    padding-inline: 3rem 0rem;
+    padding-block: 1rem;
+}
+.headerinput i{
+    color: rgb(196, 194, 194);
+    position: absolute;
+    left: 790px;
+    font-size: 20px;
+    align-items: center;
+}
+.input:focus{
+    outline: 1px solid rgb(72, 72, 238);
+}
+.lupa:focus{
+    color: rgb(72, 72, 238);
+}
 aside{ 
     grid-area: aside; 
     background-color: gray; 
@@ -55,11 +103,6 @@ main{
     position: absolute;
     right: 0;
 }
-.topheader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
 nav{
     display: flex;
     justify-content: space-between;
@@ -70,45 +113,6 @@ nav{
 .user{
     display: flex;
     align-items: center;
-}
-.textheader{
-    color: grey;
-}
-.headerinput{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    flex-grow: 1;
-    flex-wrap: 2;
-    position: relative;
-    padding-block: 0.5rem;
-}
-.textheadera{
-    color: grey;
-}
-.input{
-    border-radius: 7px;
-    border-color: rgb(187, 180, 180);
-    border-style:groove;
-    border-width: 1px;
-    width: 350px;
-    height: 50px;
-    font-size: 17px;
-    padding-inline: 3rem 0rem;
-    padding-block: 1rem;
-}
-.lupa{
-    color: rgb(196, 194, 194);
-    position: absolute;
-    left: 790px;
-    font-size: 20px;
-}
-.burguer{
-   display: none;
-   padding: 1rem;
-}
-.imggral{
-    background-color: aqua;
 }
 aside{
     width: 70%;
@@ -234,7 +238,6 @@ section h4{
 footer{ grid-area: footer; 
     background-color: darkblue; 
 }
-
 @media (max-width: 1100px){
        .textheadera{
         display: none;
@@ -245,8 +248,7 @@ footer{ grid-area: footer;
     }
        .lupa{
         position: inherit;
-    }
-   
+    } 
 }
 @media (max-width: 1200px){
     header{
@@ -254,8 +256,7 @@ footer{ grid-area: footer;
     }
     .topheader{
         gap: 1rem;
-    }
-        
+    }      
 }
 @media (max-width: 955px){
     nav{
@@ -264,8 +265,6 @@ footer{ grid-area: footer;
     .burguer{
         display: flex;
         color: grey;
-        ;
-       
-    }
-    
+        ; 
+    }  
 }
