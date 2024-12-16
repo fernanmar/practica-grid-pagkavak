@@ -38,6 +38,10 @@ header{
 .textheader{
     color: grey;
 }
+.textheader:hover{
+    color: black;
+    transform: translateY(5px);
+}
 .textheadera{
     color: grey;
 }
@@ -74,6 +78,9 @@ header{
 }
 .input:focus{
     outline: 1px solid rgb(72, 72, 238);
+}
+.input:focus::placeholder{
+    color: white;
 }
 .lupa:focus{
     color: rgb(72, 72, 238);
@@ -161,6 +168,9 @@ article{
     justify-content: space-between;
     background-color: white;
     box-shadow: 0px 5px 10px rgb(37, 37, 37);
+}
+.placesbox:hover{
+    box-shadow: 0px 15px 20px rgb(26, 25, 25);;
 }
 .imgbox{
     width: 100%;
