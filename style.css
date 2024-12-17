@@ -35,28 +35,58 @@ header{
     justify-content: space-between;
     align-items: center; 
 }
+.kavaklogo{
+    display: flex;
+    width: 130px;
+    height: auto;
+}
 .textheader{
     color: grey;
     font-size: 1rem;
 }
 .textheader:hover{
-    color: black;
+    color: rgb(22, 20, 20);
     transform: translateY(5px);
 }
+.chevrondown{
+    padding-inline-start: 0.5rem;
+    color: rgb(48, 144, 233);
+    font-size: 1rem;
+}
 .textheader:hover i{
-    font-size: 1.5rem;
-    color: rgb(39, 88, 134)
+    font-size: 1rem;
+    color: rgb(39, 88, 134);
+    transform: translateY(5px);
 }
 .textheadera{
     color: grey;
     font-size: 1rem;
+}
+.textheadera:hover{
+    color: black;
+}
+.topheaderimgflag{
+    display: flex;
+    align-items: center;
+}
+.topheaderimgflag:hover{
+   
+}
+.topheaderimguser{
+    display: flex;
+    align-items: center;
 }
 .burguer{
     display: none;
     padding: 1rem;
     position: absolute;
     right: 1rem;
- }
+}
+ .downheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .headerinput{
     display: flex;
     justify-content: left;
@@ -77,28 +107,28 @@ header{
     padding-inline: 3rem 0rem;
     padding-block: 1rem;
 }
-.headerinput i{
-    color: rgb(196, 194, 194);
+.input:focus{
+    outline: 1px solid rgb(72, 72, 238);
+    border-color: rgb(30, 30, 180);
+    border: 1px;
+}
+.lupa{
     position: absolute;
     left: 20px;
     font-size: 20px;
     align-items: center;
 }
-.input:focus{
-    outline: 1px solid rgb(72, 72, 238);
-    border-color: rgb(30, 30, 180);
-    border: 1px;
+.headerinput i{
+    color: rgb(196, 194, 194);
+}
+.headerinput i:focus{
+    color: blue;
 }
 .input:focus::placeholder{
     color: white;
 }
 .lupa:focus{
     color: rgb(72, 72, 238);
-}
-.downheader{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .filtrarpor{
     display: flex;
@@ -109,35 +139,10 @@ header{
     font-size: 1.1rem;
     color: rgb(168, 168, 168);
 }
-.chevrondown{
-    padding-inline-start: 0.5rem;
-    color: rgb(48, 144, 233);
-    font-size: 1.3rem;
-}
-aside{ 
-    grid-area: aside; 
-    background-color: gray; 
-}
+
 main{ 
     grid-area: main; 
     background-color: aliceblue;
-}
-.desplegabletotal{
-    display: flex;
-    overflow-x: auto;
-}
-.flechas{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.flechaizquierda{
-    position: absolute;
-    left: 0;
-}
-.flechaderecha{
-    position: absolute;
-    right: 0;
 }
 nav{
     display: flex;
@@ -257,19 +262,17 @@ section{
     padding-block: 2rem ;
 }
 .sectionleft{
-    width: 50%;
-    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
-}
-.sectionright{
+    align-items: center;
     width: 50%;
     height: auto;
-    align-items: center;
+    gap: 4rem;
 }
 #sectionimg{
+    display: flex;
     align-items: center;
+    padding-inline-start: 5rem;
 }
 .sectionlefttext{
     color: white;
@@ -284,15 +287,25 @@ section h4{
     font-size:50px;
     padding-block: 0rem 2rem;
 }
+.sectionadiv{
+    display: flex;
+    justify-content: left;
+}
 .sectiona{
     background-color: white;
-    border-radius: 10px   ;
+    border-radius: 10px;
     color: black;
     padding: 1rem 6rem;
 }
 .sectiona:hover{
     background-color: black;
     color: white;
+}
+.sectionright{
+    display: flex;
+    width: 50%;
+    height: auto;
+    align-items: center;
 }
 footer{ grid-area: footer; 
     background-color: darkblue; 
@@ -305,7 +318,7 @@ footer{ grid-area: footer;
         justify-content: left; 
     }
        .lupa{
-        position: inherit;
+        position: absolute;
         ;
     }
 }
