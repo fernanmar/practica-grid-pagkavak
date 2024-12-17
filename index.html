@@ -17,7 +17,7 @@
                 <a class="textheader" href="#">Comprá un auto</a>
                 <a class="textheader" href="#">Vendé tu auto</a>
                 <a class="textheader" href="#">Soy Empresa</a>
-                <a class="textheader" href="#">Nosotros</a>
+                <a class="textheader" href="#">Nosotros<i class="chevrondown fa-solid fa-chevron-down"></i></a>
                 <a class="textheader" href="#"><img class="imggral" src="flagicon.png" alt="imagen de una bandera"></a>
                 <div class="user">
                     <img class="imggral" src="usericon.png" alt="imagen de logo de usuario">
@@ -25,16 +25,26 @@
                 </div>
             </nav>
         </div>
-        <form class="headerinput">
-            <i class="lupa fa-solid fa-magnifying-glass"></i>
-            <input  class="input" placeholder="busca marca, modelo, año, color, etc">
-        </form>    
+        <div class="downheader">
+            <form class="headerinput">
+                <i class="lupa fa-solid fa-magnifying-glass"></i>
+                <input  class="input" placeholder="busca marca, modelo, año, color, etc">
+            </form>
+            <div class="filtrarpor">
+                <p class="textheaderp">Filtrar por</p>
+                <a class="textheader" href="#">Marcas y modelos<i class="chevrondown fa-solid fa-chevron-down"></i></a>
+                <a class="textheader" href="#">Años<i class="chevrondown fa-solid fa-chevron-down"></i></a>
+                <a class="textheader" href="#">Tipo<i class="chevrondown fa-solid fa-chevron-down"></i></a>
+                <a class="textheader" href="#">Ubicación<i class="chevrondown fa-solid fa-chevron-down"></i></a>
+                <a class="textheader" href="#">Más vendidos<i class="chevrondown fa-solid fa-chevron-down"></i></a> 
+            </div>   
+        </div> 
     </header>
     <main>
        
     </main>
     <article>  
-        <div class="articletittlediv"><h2 class="articletittle">Visita nuestras cedes y conocenos!</h2></div>
+        <div class="articletittlediv"><h2 class="articletittle">Visita nuestras sedes y conocenos!</h2></div>
         <div class="placesboxtotal">
             <div class="placesbox">
                 <img class="imgbox" src="imgbox.png" alt="imagen de oficina de kavak">
@@ -126,11 +136,11 @@
         <div class="sectionleft">
             <div class="sectionlefttop">
                 <h4>Cambiá o vendé tu auto de forma simple y rápida</h4>
-                <p>Cotizá tu auto y agendá una inspección en nuestra sede más cercana.</p>
-                <p>Vendé tu auto sin intermediarios. Te depositamos directo en tu cuenta.</p>
-                <p>Dejalo en parte de pago y llevate un auto Kavak certificado y con garantía.</p>
+                <p class="sectionlefttext borderdown " >Cotizá tu auto y agendá una inspección en nuestra sede más cercana.</p>
+                <p class="sectionlefttext borderdown " >Vendé tu auto sin intermediarios. Te depositamos directo en tu cuenta.</p>
+                <p class="sectionlefttext" >Dejalo en parte de pago y llevate un auto Kavak certificado y con garantía.</p>
             </div>
-            <div><a href="#">Vende tu auto</a></div>
+            <div><a href="#" class="sectiona">Vende tu auto</a></div>
         </div>
         <div class="sectionright">
             <img id="sectionimg" src="sectionimg.png" alt="imagen de auto">
