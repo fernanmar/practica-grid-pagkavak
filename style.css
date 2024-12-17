@@ -45,9 +45,14 @@ header{
 .textheadera{
     color: grey;
 }
+.kavaklogo:hover{
+   
+}
 .burguer{
     display: none;
     padding: 1rem;
+    position: absolute;
+    right: 1rem;
  }
 .headerinput{
     display: flex;
@@ -78,6 +83,7 @@ header{
 }
 .input:focus{
     outline: 1px solid rgb(72, 72, 238);
+    box-shadow: 5px 5px 5px 5px blue;
 }
 .input:focus::placeholder{
     color: white;
@@ -170,7 +176,7 @@ article{
     box-shadow: 0px 5px 10px rgb(37, 37, 37);
 }
 .placesbox:hover{
-    box-shadow: 0px 15px 20px rgb(26, 25, 25);;
+    box-shadow: 0px 15px 20px rgb(26, 25, 25);
 }
 .imgbox{
     width: 100%;
@@ -253,12 +259,12 @@ footer{ grid-area: footer;
         display: none;
        }
        .headerinput{
-        position: inherit;
         justify-content: left; 
     }
        .lupa{
         position: inherit;
-    } 
+        ;
+    }
 }
 @media (max-width: 1200px){
     header{
