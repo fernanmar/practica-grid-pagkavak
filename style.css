@@ -78,9 +78,8 @@ header{
 }
 .burguer{
     display: none;
-    padding: 1rem;
     position: absolute;
-    right: 1rem;
+    right: 7rem;
 }
  .downheader{
     display: flex;
@@ -103,7 +102,7 @@ header{
     border-width: 1px;
     width: 350px;
     height: 50px;
-    font-size: 17px;
+    font-size: 1rem;
     padding-inline: 3rem 0rem;
     padding-block: 1rem;
 }
@@ -139,7 +138,6 @@ header{
     font-size: 1.1rem;
     color: rgb(168, 168, 168);
 }
-
 main{ 
     grid-area: main; 
     background-color: aliceblue;
@@ -187,9 +185,9 @@ article{
     background-color:white;
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(2,3fr);
+    grid-template-rows: repeat(2,1fr);
     width: 100%;
-    height: 800px;
+    height: auto;
     gap: 2rem;
     padding-block: 1rem;
 }
@@ -310,33 +308,57 @@ section h4{
 footer{ grid-area: footer; 
     background-color: darkblue; 
 }
+@media (max-width: 1200px){
+        header{
+        padding-inline: 3rem 0rem;
+    }
+        .topheader{
+        gap: 1rem;
+    }
+        .placesboxtotal{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }      
+}
 @media (max-width: 1100px){
        .textheadera{
         display: none;
        }
-       .headerinput{
-        justify-content: left; 
-    }
-       .lupa{
-        position: absolute;
-        ;
-    }
-}
-@media (max-width: 1200px){
-    header{
-        padding-inline: 1rem 0rem;
-    }
-    .topheader{
+        .filtrarpor{
         gap: 1rem;
-    }      
+    }
 }
-@media (max-width: 955px){
-    nav{
+@media (max-width: 1070px){
+        .input{
+            width: 100%;
+        }
+        .filtrarpor{
         display: none;
     }
-    .burguer{
+        .articletittle{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 1030px){
+        header{
+        padding-inline: 7rem;
+    }
+        .kavaklogo{
+        width: 100px;
+    }
+        nav{
+        display: none;
+    }
+        .burguer{
         display: flex;
         color: grey;
-        ; 
     }  
+    article{
+        padding-inline: 3rem;
+    }
+}
+@media(max-width 900px){
+        .header{
+        padding-inline: 1rem;
+    }
 }
